@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit Medicament{% endblock %}
+
+{% block body %}
+<h1><span class="fa fa-stethoscope" aria-hidden="true"></span>Edit Medicament</h1>
+
+    {{ include('medicament/_form.html.twig', {'button_label': 'Update'}) }}
+
+<div class="login-icon ml-2">
+    <a class="" href="{{ path('medicament_index') }}"> back to list </a>
+</div>
+
+    {{ include('medicament/_delete_form.html.twig') }}
+{% endblock %}

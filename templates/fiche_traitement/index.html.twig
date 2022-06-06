@@ -1,0 +1,42 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}FicheTraitement index{% endblock %}
+
+{% block body %}
+<h1><span class="fa fa-stethoscope" aria-hidden="true"></span>FicheTraitement index</h1>
+
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nbr_fiche</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for fiche_traitement in fiche_traitements %}
+            <tr>
+                <td>{{ fiche_traitement.id }}</td>
+                <td>{{ fiche_traitement.nbrFiche }}</td>
+                <td><div class="login-icon ml-2">
+                    <a class="" href="{{ path('fiche_traitement_show', {'id': fiche_traitement.id}) }}"> show </a>
+                    <a class="" href="{{ path('fiche_traitement_edit', {'id': fiche_traitement.id}) }}"> edit </a>
+                    </div>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="3">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+<div class="login-icon ml-2">
+<a class="" href="{{ path('fiche_traitement_new') }}"> Create new </a>
+</div>
+
+<div class="login-icon ml-2">
+<a class="" href="{{ path('admin') }}"> Page admin </a>
+</div>
+{% endblock %}

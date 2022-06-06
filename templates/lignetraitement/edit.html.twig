@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit Ligne traitement{% endblock %}
+
+{% block body %}
+<h1><span class="fa fa-stethoscope" aria-hidden="true"></span>Edit Ligne traitement</h1>
+
+    {{ include('lignetraitement/_form.html.twig', {'button_label': 'Update'}) }}
+
+<div class="login-icon ml-2">
+    <a class="" href="{{ path('lignetraitement_index') }}"> back to list </a>
+</div>
+
+    {{ include('lignetraitement/_delete_form.html.twig') }}
+{% endblock %}

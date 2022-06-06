@@ -1,0 +1,46 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Paiement index{% endblock %}
+
+{% block body %}
+<h1><span class="fa fa-stethoscope" aria-hidden="true"></span>Paiement index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Mode_paiment</th>
+                <th>Montant_paye</th>
+                <th>Montantnon_paye</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for paiement in paiements %}
+            <tr>
+                <td>{{ paiement.id }}</td>
+                <td>{{ paiement.modePaiment }}</td>
+                <td>{{ paiement.montantPaye }}</td>
+                <td>{{ paiement.montantnonPaye }}</td>
+                <td><div class="login-icon ml-2">
+                    <a class="" href="{{ path('paiement_show', {'id': paiement.id}) }}"> show </a>
+                    <a class="" href="{{ path('paiement_edit', {'id': paiement.id}) }}"> edit </a>
+                    </div>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="5">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+<div class="login-icon ml-2">
+<a class="" href="{{ path('paiement_new') }}"> Create new </a>
+</div>
+
+<div class="login-icon ml-2">
+<a class="" href="{{ path('admin') }}"> Page admin </a>
+</div>
+
+{% endblock %}

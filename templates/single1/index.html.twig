@@ -1,0 +1,382 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Suite Blog {% endblock %}
+{% block header %}
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Dental Health Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+
+    <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+
+{% endblock %}
+{% block body %}
+
+<!-- top header -->
+<div class="header-top">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <ul class="d-lg-flex header-w3_pvt">
+                    <li class="mr-lg-3">
+                        <span class="fa fa-envelope-open"></span>
+                        <a href="mailto:Dse@symfony.com" class="">Dse@symfony.com</a>
+                    </li>
+                    <li>
+                        <span class="fa fa-phone"></span>
+                        <p class="d-inline">Appelez-nous 0526010101</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-6 header-right-w3_pvt">
+                <ul class="d-lg-flex header-w3_pvt justify-content-lg-end">
+                    <li class="mr-lg-3">
+                        <span class=""><span class="fa fa-clock-o"></span>Lundi - Vendredi : 8:30 à 19:30 GMT</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- //top header -->
+
+<!-- //header -->
+<header class="py-3">
+    <div class="container">
+            <div id="logo">
+                <h1> <a href="{{ path('default') }}"><span class="fa fa-stethoscope" aria-hidden="true"></span>Symfony Dentiste</a></h1>
+            </div>
+        <!-- nav -->
+        <nav class="d-lg-flex">
+
+            <label for="drop" class="toggle"><span class="fa fa-bars"></span></label>
+            <input type="checkbox" id="drop" />
+            <ul class="menu mt-2 ml-auto">
+                <li class="active"><a href="{{ path('about') }}">À propos</a></li>
+                <li class=""><a href="{{ path('services') }}">Services</a></li>
+                <li class=""><a href="{{ path('gallry') }}">Galerie</a></li>
+                <li class=""><a href="{{ path('blog') }}">Blog</a></li>
+                <li class=""><a href="{{ path('contact') }}">Contacter nous</a></li>
+            </ul>
+            <div class="login-icon ml-2">
+                <a class="" href="{{ path('admin') }}"> Espace Admin </a>
+            </div>
+        </nav>
+        <div class="clear"></div>
+        <!-- //nav -->
+    </div>
+</header>
+<!-- //header -->
+
+<!-- banner -->
+<div class="innerpage-banner" id="home">
+	<div class="inner-page-layer">
+	</div>
+</div>
+<!-- //banner -->
+
+<!-- single -->
+<section class="bottom-banner-w3layouts py-5">
+	<div class="container py-md-3">
+		<h2 class="heading text-center mb-sm-5 mb-4">Suite Blog Page </h2>
+		<div class="row inner-sec-w3ls-agileinfo">
+			<!--left-->
+			<div class="col-lg-8 left-blog-info text-left">
+					<div class="card">
+						<a href="single.html">
+							<img src="images/bl.jpg" class="card-img-top img-fluid" alt="">
+						</a>
+						<div class="card-body">
+							<ul class="blog-icons my-4">
+								<li>
+									<a href="#">
+										<span class="fa fa-calendar"></span> 06 Aout 2021</a>
+								</li>
+								<li class="mx-2">
+									<a href="#">
+										<span class="fa fa-comment"></span> 21</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="fa fa-eye"></span> 2000</a>
+								</li>
+
+							</ul>
+								<h2 class="my-3">Pourquoi une bonne sante bucco-dentaire aide a prevenir les maladies cardiovasculaires</h2>
+							    <p class="card-text">Saviez-vous que les patients atteints d'un certain type de maladie des gencives ont un risque de 25% a 50% plus eleve de souffrir de maladies cardiovasculaires? Oui, bien qu'apparemment la sante de notre bouche et la sante de notre coeur ne semblent pas liees, elles le sont.</p><br>
+
+                                <p class="card-text">à tel point que les experts en cardiologie et en  dentisterie ont montre que le maintien d'une bonne sante bucco-dentaire permet de prevenir les maladies cardiovasculaires. Mais quelle est exactement la relation entre les maladies parodontales et cardiaques?</p>
+
+
+                                <p class="card-text">Dans ce nouvel article, nous allons vous expliquer le lien entre les deux et nous allons vous dire quelles mesures de prevention peuvent etre adoptees au quotidien pour prendre soin a la fois du coeur et du sourire.</p><br>
+                                <h4 class="my-3">Relation entre la sante bucco-dentaire et les maladies cardiovasculaires</h4>
+                                <p class="card-text">Il est bien connu depuis longtemps que le tabagisme, le stress, l'obesite et un mode de vie sedentaire representent des facteurs de risque pour la sante en general et pour la sante cardiovasculaire en particulier. Mais ne sont pas les seuls.</p><br>
+
+                                <p class="card-text">Depuis 2012, la Societe europeenne de cardiologie a inclus la parodontite comme facteur de risque cardiovasculaire et recommande sa prevention et son traitement, non seulement pour ameliorer la sante bucco-dentaire, mais aussi pour reduire les risques de souffrir d'evenements coronariens graves.
+                                Les cardiologues et les dentistes conviennent que les maladies qui affectent les gencives, en particulier les infections parodontales, sont etroitement liees à l'origine de maladies cardiaques importantes.</p>
+
+
+                                <p class="card-text">Cette relation est attribuee au grand nombre de bacteries situees sous la gencive et qui peuvent passer dans la circulation sanguine, affectant d'autres zones du corps.</p><br>
+
+                                <h4 class="my-3">Le maintien d'une bonne sante bucco-dentaire aide a prevenir les maladies cardiovasculaires</h4>
+                                <p class="card-text">Les maladies parodontales ou des gencives sont causees par des bacteries et sont donc considerees comme des infections buccales. L'une des consequences d'une infection locale peut etre le developpement d'une inflammation systemique qui peut affecter differentes parties du corps.</p><br>
+
+                                <p class="card-text">Selon les experts, dans les maladies parodontales, un grand nombre de facteurs inflammatoires sont liberes dans la circulation sanguine et peuvent etre deposes dans differents organes. En ce sens, la parodontite peut finir par produire une inflammation generalisee qui provoque des troubles tels que l'arteriosclerose ou toute maladie cardiovasculaire dans laquelle il y a des dommages aux arteres.</p>
+
+
+                                <p class="card-text">Pour cette raison, lorsque nous maintenons une bonne hygiene buccale, nous eliminons une partie de la plaque bacterienne logee dans notre cavite buccale (principale cause des maladies parodontales) et, par consequent. Nous reduisons egalement l'inflammation locale, ainsi que les risques de souffrir d'un maladie cardiovasculaire .</p><br>
+
+                                <h4 class="my-3">Signes d'alerte: prenez soin de vos gencives pour prendre soin de votre coeur</h4>
+                                <p class="card-text">Compte tenu du fait que les maladies parodontales representent un facteur de risque de developper des maladies cardiovasculaires, etre attentif aux signes avant-coureurs que notre bouche nous donne n'est jamais de trop. Certains des principaux signes que nous ne devons pas ignorer sont:</p><br>
+
+                                <p class="card-text">·  Rougeur, gonflement ou saignement des gencives.</p>
+
+
+                                <p class="card-text">.  Mauvaise haleine ou halitose.</p><br>
+                                <p class="card-text">.   Hypersensibilite au froid ou sensibilite dentaire.</p><br>
+
+                                <h4 class="my-3">Mesures preventives pour prendre soin des dents et du coeur</h4>
+                                <p class="card-text">En plus de preter attention aux signes avant-coureurs mentionnes ci-dessus, il existe un certain nombre d'habitudes bucco-dentaires saines qui peuvent aider a ameliorer la sante bucco- dentaire et a prevenir les maladies cardiovasculaires.</p><br>
+                                <p class="card-text">Il ne faut pas oublier qu'environ 17 millions de personnes meurent chaque annee de maladies cardiovasculaires et que bon nombre de ces deces peuvent etre evites en introduisant de petits changements au jour le jour tels que manger sainement, faire de l'exercice, arreter de fumer et, comme non, prendre soin de la sante bucco-dentaire . Certains des conseils que vous pouvez suivre pour avoir une bouche saine sont:</p><br>
+
+                                <p class="card-text">·  Brossez-vous les dents au moins trois fois par jour et apres chaque repas.</p>
+
+
+                                <p class="card-text">.  Utilisez du fil dentaire ou des brosses interdentaires pour eliminer les debris alimentaires.</p><br>
+                                <p class="card-text">.  Si votre dentiste le recommande, utilisez du dentifrice a chaque brossage.</p><br>
+                                <p class="card-text">.  Visitez le dentiste au moins une fois tous les 6 mois et n'oubliez pas de faire un nettoyage professionnel au moins une fois par an.</p>
+						</div>
+					</div>
+					<div class="comment-top">
+						<h4>commentaires</h4>
+						<div class="media">
+							<img src="images/ser1.jpg" alt="" class="img-fluid rounded">
+							<div class="media-body">
+								<h5 class="mt-sm-0 mt-3">Aaraba Anas</h5>
+								<p>Article tres interaissan, merci pour l'information docteur.</p>
+
+							</div>
+						</div>
+						<div class="media">
+							<img src="images/ser.webp" alt="" class="img-fluid rounded">
+							<div class="media-body">
+								<h5 class="mt-sm-0 mt-3">Symfony Person</h5>
+								<p>Merci pour cette information mes docteurs!.</p>
+							</div>
+						</div>
+					</div>
+					<div class="comment-top">
+						<h4>Laisser un commentaire</h4>
+						<div class="comment-bottom">
+							<form action="#" method="post">
+								<input class="form-control" type="text" name="Name" placeholder="Nom" required="">
+								<input class="form-control" type="email" name="Email" placeholder="Email" required="">
+
+								<input class="form-control" type="text" name="Subject" placeholder="Sujet" required="">
+
+								<textarea class="form-control" name="Message" placeholder="Message..." required=""></textarea>
+								<button type="submit" class="btn btn-primary submit">Submit</button>
+							</form>
+						</div>
+					</div>
+
+			</div>
+			<!--//left-->
+			<!--right-->
+			<aside class="col-lg-4 right-blog-con text-left">
+				<div class="right-blog-info text-left">
+					<div class="tech-btm">
+						<img src="images/service1.jpg" class="card-img-top img-fluid rounded" alt="">
+					</div>
+					<div class="tech-btm">
+						<h4>Abonnez-vous a notre lettre d'information</h4>
+						<p>Entrer votre adresse e-mail svp,  </p>
+						<form action="#" method="post">
+							<input class="form-control" type="email" placeholder="Email" required="">
+							<input class="form-control" type="submit" value="S'abonner">
+						</form>
+
+					</div>
+					<div class="tech-btm">
+						<h4>Categories</h4>
+						<ul class="list-group single">
+							<li class="list-group-item d-flex justify-content-between align-items-center">
+								Symfony Dentiste
+								<span class="badge badge-primary badge-pill">14</span>
+							</li>
+							<li class="list-group-item d-flex justify-content-between align-items-center">
+								Covid-19 informations
+								<span class="badge badge-primary badge-pill">2</span>
+							</li>
+							<li class="list-group-item d-flex justify-content-between align-items-center">
+								Dentiste coeur d'ange.
+								<span class="badge badge-primary badge-pill">1</span>
+							</li>
+						</ul>
+					</div>
+					<div class="tech-btm">
+						<h4>Top stories de la semaine</h4>
+
+						<div class="blog-grids row mb-3">
+							<div class="col-md-5 blog-grid-left">
+								<a href="single.html">
+									<img src="images/service4.jpg" class="card-img-top img-fluid rounded" alt="">
+								</a>
+							</div>
+							<div class="col-md-7 blog-grid-right">
+
+								<h5>
+									<a href="single1.html">Pourquoi une bonne sante bucco-dentaire aide a prevenir les maladies cardiovasculaires </a>
+								</h5>
+								<div class="sub-meta">
+									<span>
+										<span class="fa fa-clock-o"></span> 6 aout 2021</span>
+								</div>
+							</div>
+
+						</div>
+						<div class="blog-grids row mb-3">
+							<div class="col-md-5 blog-grid-left">
+								<a href="single.html">
+									<img src="images/service5.jpg" class="card-img-top img-fluid rounded" alt="">
+								</a>
+							</div>
+							<div class="col-md-7 blog-grid-right">
+								<h5>
+									<a href="single2.html">Le syndrome de la bouche qui brule, un trouble peu connu </a>
+								</h5>
+								<div class="sub-meta">
+									<span>
+										<span class="fa fa-clock-o"></span> 12 jul 2021</span>
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<div class="tech-btm widget_social text-left">
+						<h4>Restez connecté</h4>
+						<ul>
+
+							<li>
+								<a class="twitter" href="#">
+									<span class="fa fa-twitter"></span>
+									<span class="count">317K</span> Twitter Followers</a>
+							</li>
+							<li>
+								<a class="facebook" href="#">
+									<span class="fa fa-facebook"></span>
+									<span class="count">218k</span> Facebook Followers</a>
+							</li>
+							<li>
+								<a class="dribble" href="#">
+									<span class="fa fa-dribbble"></span>
+
+									<span class="count">215k</span> Dribble Followers</a>
+							</li>
+							<li>
+								<a class="pin" href="#">
+									<span class="fa fa-pinterest"></span>
+									<span class="count">190k</span> Pinterest Followers</a>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+			</aside>
+			<!--//right-->
+		</div>
+	</div>
+</section>
+<!-- //contact -->
+
+<!-- appointment -->
+<section class="appointment text-center py-5">
+	<div class="container py-sm-3">
+		<h4>FAITES DE VOTRE SOURIRE DE REVE UNE REALITE</h4>
+		<p class="mt-3">Appelez-nous pour reserver votre rendez-vous aujourd'hui
+</p>
+		<a href="{{ path('contact') }}">Prenez rendez-vous</a>
+	</div>
+</section>
+<!-- //appointment -->
+
+<!-- footer -->
+<footer class="py-5">
+	<div class="container py-sm-3">
+		<div class="row footer-grids">
+			<div class="col-lg-3 col-sm-6 mb-lg-0 mb-sm-5 mb-4">
+				<h4 class="mb-sm-4 mb-3"><span class="fa fa-stethoscope"></span> Sante dentaire</h4>
+				<h5>Approuve par<span>500+ Personnes</span> </h5>
+			</div>
+			<div class="col-lg-3 col-sm-6 mb-lg-0 mb-sm-5 mb-4">
+				<h4 class="mb-sm-4 mb-3">Address Info</h4>
+				<p><span class="fa mr-2 fa-map-marker"></span>: B.P. 6217, Madinat Al Irfane, Rabat-Institut<span>Rabat, Maroc</span></p>
+				<p class="phone py-2"><span class="fa mr-2 fa-phone"></span>0526010101</p>
+				<p><span class="fa mr-2 fa-envelope"></span><a href="mailto:info@example.com"> Dse@Symfony.com</a></p>
+			</div>
+			<div class="col-lg-2 col-sm-6 mb-sm-0 mb-4">
+				<h4 class="mb-sm-4 mb-3">Liens rapides</h4>
+				<ul>
+					<li><a href="#">Termes & Conditions</a></li>
+					<li class="my-2"><a href="#">Support Helpline</a></li>
+					<li><a href="#">Conseils sante</a></li>
+					<li class="mt-2"><a href="#">Politique de confidentialite</a></li>
+				</ul>
+			</div>
+			<div class="col-lg-4 col-sm-6">
+				<h4 class="mb-sm-4 mb-3">Subscribe Us</h4>
+				<p class="mb-3">Subscribe to our newsletter</p>
+				<form action="#" method="post" class="d-flex">
+					<input type="email" id="email" name="EMAIL" placeholder="Enter your email here" required="">
+					<button type="submit" class="btn">Subscribe</button>
+				</form>
+				<div class="icon-social mt-3">
+					<a href="#" class="button-footr">
+						<span class="fa mx-2 fa-facebook"></span>
+					</a>
+					<a href="#" class="button-footr">
+						<span class="fa mx-2 fa-twitter"></span>
+					</a>
+					<a href="#" class="button-footr">
+						<span class="fa mx-2 fa-dribbble"></span>
+					</a>
+					<a href="#" class="button-footr">
+						<span class="fa mx-2 fa-pinterest"></span>
+					</a>
+					<a href="#" class="button-footr">
+						<span class="fa mx-2 fa-google-plus"></span>
+					</a>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+<!-- //footer -->
+
+<!-- copyright -->
+<div class="copyright">
+	<div class="container py-4">
+		<div class=" text-center">
+			<p>© 2021 Dental Health. All Rights Reserved</p>
+		</div>
+	</div>
+</div>
+<!-- //copyright -->
+		
+<!-- move top -->
+<div class="move-top text-right">
+	<a href="#home" class="move-top"> 
+		<span class="fa fa-angle-up  mb-3" aria-hidden="true"></span>
+	</a>
+</div>
+<!-- move top -->
+{% endblock %}

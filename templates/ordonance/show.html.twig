@@ -1,0 +1,37 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Ordonance{% endblock %}
+
+{% block body %}
+<h1><span class="fa fa-stethoscope" aria-hidden="true"></span>Ordonance</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ ordonance.id }}</td>
+            </tr>
+            <tr>
+                <th>Date_ord</th>
+                <td>{{ ordonance.dateOrd ? ordonance.dateOrd|date('Y-m-d') : '' }}</td>
+            </tr>
+            <tr>
+                <th>Prescription</th>
+                <td>{{ ordonance.prescription}}</td>
+            </tr>
+            <tr>
+                <th>Consultation de</th>
+                <td>{{ ordonance.consultation }}</td>
+            </tr>
+            <td>
+                <div class="login-icon ml-2">
+                    <a class="" href="{{ path('ordonance_index') }}"> back to list </a>
+
+                    <a class="" href="{{ path('ordonance_edit', {'id': ordonance.id}) }}"> edit </a>
+                </div>
+            </td>
+        </tbody>
+    </table>
+
+    {{ include('ordonance/_delete_form.html.twig') }}
+{% endblock %}

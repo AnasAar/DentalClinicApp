@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Dossier Medical{% endblock %}
+
+{% block body %}
+<h1><span class="fa fa-stethoscope" aria-hidden="true"></span>Dossier Medical</h1>
+
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ dossier_medical.id }}</td>
+            </tr>
+            <tr>
+                <th>Cnss</th>
+                <td>{{ dossier_medical.cnss }}</td>
+            </tr>
+            <tr>
+                <th>Cnops</th>
+                <td>{{ dossier_medical.cnops }}</td>
+            </tr>
+            <tr>
+                <th>Obsservation</th>
+                <td>{{ dossier_medical.obsservation }}</td>
+            </tr>
+            <td>
+                <div class="login-icon ml-2">
+                    <a class="" href="{{ path('dossier_medical_index') }}"> back to list </a>
+
+                    <a class="" href="{{ path('dossier_medical_edit', {'id': dossier_medical.id}) }}"> edit </a>
+                </div>
+            </td>
+        </tbody>
+    </table>
+
+    {{ include('dossier_medical/_delete_form.html.twig') }}
+{% endblock %}

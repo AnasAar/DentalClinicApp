@@ -1,0 +1,204 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} À propos nous {% endblock %}
+{% block header %}
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Dental Health Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+
+    <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+
+{% endblock %}
+{% block body %}
+
+<!-- top header -->
+<div class="header-top">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6">
+				<ul class="d-lg-flex header-w3_pvt">
+					<li class="mr-lg-3">
+						<span class="fa fa-envelope-open"></span>
+						<a href="mailto:Dse@symfony.com" class="">Dse@symfony.com</a>
+					</li>
+					<li>
+						<span class="fa fa-phone"></span>
+						<p class="d-inline">Appelez-nous 0526010101</p>
+					</li>
+				</ul>
+			</div>
+			<div class="col-sm-6 header-right-w3_pvt">
+				<ul class="d-lg-flex header-w3_pvt justify-content-lg-end">
+					<li class="mr-lg-3">
+						<span class=""><span class="fa fa-clock-o"></span>Lundi - Vendredi : 8:30 à 19:30 GMT</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- //top header -->
+
+<header class="py-3">
+    <div class="container">
+            <div id="logo">
+                <h1> <a href="{{ path('default') }}"><span class="fa fa-stethoscope" aria-hidden="true"></span>Symfony Dentiste</a></h1>
+            </div>
+        <!-- nav -->
+        <nav class="d-lg-flex">
+
+            <label for="drop" class="toggle"><span class="fa fa-bars"></span></label>
+            <input type="checkbox" id="drop" />
+            <ul class="menu mt-2 ml-auto">
+                <li class="active"><a href="{{ path('about') }}">À propos</a></li>
+                <li class=""><a href="{{ path('services') }}">Services</a></li>
+                <li class=""><a href="{{ path('gallry') }}">Galerie</a></li>
+                <li class=""><a href="{{ path('blog') }}">Blog</a></li>
+                <li class=""><a href="{{ path('contact') }}">Contacter nous</a></li>
+            </ul>
+            <div class="login-icon ml-2">
+                <a class="" href="{{ path('admin') }}"> Espace Admin </a>
+            </div>
+        </nav>
+        <div class="clear"></div>
+        <!-- //nav -->
+    </div>
+</header>
+<!-- //header -->
+
+<!-- banner -->
+<div class="innerpage-banner" id="home">
+	<div class="inner-page-layer">
+	</div>
+</div>
+<!-- //banner -->
+
+<!-- blog -->
+<section class="blog py-5">
+	<div class="container py-md-3">
+		<h2 class="heading text-center mb-sm-5 mb-4">Blog dentaire : </h2>
+		<div class="row blog-grids head">
+			<div class="col-lg-7 mb-lg-5 blog-img1">
+				<img src="images/bl.jpg" alt="" class="img-fluid"/>
+			</div>
+			<div class="col-lg-5 mb-lg-5 mb-4">
+				<h5>06 Aug 2021.</h5>
+				<h4 class="my-3">Pourquoi une bonne santé bucco-dentaire aide à prévenir les maladies cardiovasculaires</h4>
+				<p class="my-3">Saviez-vous que les patients atteints d'un certain type de maladie des gencives ont un risque de 25% à 50% plus élevé de souffrir de maladies cardiovasculaires? Oui, bien qu'apparemment la santé de notre bouche et la santé de notre cœur ne semblent pas liées, elles le sont.
+
+                À tel point que les experts en cardiologie et en dentisterie ont montré que le maintien d'une bonne santé bucco-dentaire permet de prévenir les maladies cardiovasculaires. Mais quelle est exactement la relation entre les maladies parodontales et cardiaques?
+
+                Dans ce nouvel article, nous allons vous expliquer le lien entre les deux et nous allons vous dire quelles mesures de prévention peuvent être adoptées au quotidien pour prendre soin à la fois du cœur et du sourire.
+				</p>
+				<a href="{{ path('single1') }}" class="btn-banner"> Voir l'article </a>
+			</div>
+			<div class="col-lg-5 mb-lg-5 mb-4">
+				<h5>12 Juillet 2021.</h5>
+				<h4 class="my-3">Le syndrome de la bouche qui brûle, un trouble peu connu</h4>
+				<p class="my-3">C'est une maladie peu connue, qui touche plus les femmes que les hommes et qui peut considérablement détériorer la qualité de vie de ceux qui en souffrent. Il s'agit du syndrome de la bouche brûlante, un trouble complexe et souvent douloureux caractérisé par la présence de brûlures continues ou récurrentes dans la bouche, parfois sans cause apparente.
+
+				Elle est plus fréquente chez les adultes de plus de 60 ans, bien que les femmes de plus de 50 ans au stade de la périménopause ou de la postménopause soient plus susceptibles d'en souffrir. Elle commence généralement spontanément et est souvent difficile à identifier et à diagnostiquer.
+			    Vous voulez en savoir plus sur ce trouble oral ? Dans ce nouvel article, nous vous expliquons ce que sont les causes et les symptômes du syndrome de la bouche brûlante.</p>
+				<a href="{{ path('single2') }}" class="btn-banner"> Voir l'article </a>
+			</div>
+			<div class="col-lg-7 mb-5 blog-img2">
+				<img src="images/bi.jpg" alt="" class="img-fluid"/>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- //blog -->
+
+<!-- footer -->
+<!-- appointment -->
+<section class="appointment text-center py-5">
+	<div class="container py-sm-3">
+		<h4>FAITES DE VOTRE SOURIRE DE RÊVE UNE RÉALITÉ</h4>
+		<p class="mt-3">Appelez-nous pour réserver votre rendez-vous aujourd'hui
+</p>
+		<a href="{{ path('contact') }}">Prenez rendez-vous</a>
+	</div>
+</section>
+<!-- //appointment -->
+
+<!-- footer -->
+<footer class="py-5">
+	<div class="container py-sm-3">
+		<div class="row footer-grids">
+			<div class="col-lg-3 col-sm-6 mb-lg-0 mb-sm-5 mb-4">
+				<h4 class="mb-sm-4 mb-3"><span class="fa fa-stethoscope"></span> Santé dentaire</h4>
+				<h5>Approuvé par<span>500+ Personnes</span> </h5>
+			</div>
+			<div class="col-lg-3 col-sm-6 mb-lg-0 mb-sm-5 mb-4">
+				<h4 class="mb-sm-4 mb-3">Address Info</h4>
+				<p><span class="fa mr-2 fa-map-marker"></span>: B.P. 6217, Madinat Al Irfane, Rabat-Institut<span>Rabat, Maroc</span></p>
+				<p class="phone py-2"><span class="fa mr-2 fa-phone"></span>0526010101</p>
+				<p><span class="fa mr-2 fa-envelope"></span><a href="mailto:info@example.com"> Dse@Symfony.com</a></p>
+			</div>
+			<div class="col-lg-2 col-sm-6 mb-sm-0 mb-4">
+				<h4 class="mb-sm-4 mb-3">Liens rapides</h4>
+				<ul>
+					<li><a href="#">Termes & Conditions</a></li>
+					<li class="my-2"><a href="#">Support Helpline</a></li>
+					<li><a href="#">Conseils santé</a></li>
+					<li class="mt-2"><a href="#">Politique de confidentialité</a></li>
+				</ul>
+			</div>
+			<div class="col-lg-4 col-sm-6">
+				<h4 class="mb-sm-4 mb-3">Subscribe Us</h4>
+				<p class="mb-3">Subscribe to our newsletter</p>
+				<form action="#" method="post" class="d-flex">
+					<input type="email" id="email" name="EMAIL" placeholder="Enter your email here" required="">
+					<button type="submit" class="btn">Subscribe</button>
+				</form>
+				<div class="icon-social mt-3">
+					<a href="#" class="button-footr">
+						<span class="fa mx-2 fa-facebook"></span>
+					</a>
+					<a href="#" class="button-footr">
+						<span class="fa mx-2 fa-twitter"></span>
+					</a>
+					<a href="#" class="button-footr">
+						<span class="fa mx-2 fa-dribbble"></span>
+					</a>
+					<a href="#" class="button-footr">
+						<span class="fa mx-2 fa-pinterest"></span>
+					</a>
+					<a href="#" class="button-footr">
+						<span class="fa mx-2 fa-google-plus"></span>
+					</a>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+<!-- //footer -->
+
+<!-- copyright -->
+<div class="copyright">
+	<div class="container py-4">
+		<div class=" text-center">
+			<p>© 2021 Dental Health. All Rights Reserved</p>
+		</div>
+	</div>
+</div>
+<!-- //copyright -->
+		
+<!-- move top -->
+<div class="move-top text-right">
+	<a href="#home" class="move-top"> 
+		<span class="fa fa-angle-up  mb-3" aria-hidden="true"></span>
+	</a>
+</div>
+<!-- move top -->
+{% endblock %}

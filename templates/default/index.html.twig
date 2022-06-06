@@ -1,0 +1,353 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Symfony Dentiste {% endblock %}
+{% block header %}
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Dental Health Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+
+    <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+
+{% endblock %}
+{% block body %}
+
+<!-- top header -->
+<div class="header-top">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <ul class="d-lg-flex header-w3_pvt">
+                    <li class="mr-lg-3">
+                        <span class="fa fa-envelope-open"></span>
+                        <a href="mailto:Dse@symfony.com" class="">Dse@symfony.com</a>
+                    </li>
+                    <li>
+                        <span class="fa fa-phone"></span>
+                        <p class="d-inline">Appelez-nous 0526010101</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-6 header-right-w3_pvt">
+                <ul class="d-lg-flex header-w3_pvt justify-content-lg-end">
+                    <li class="mr-lg-3">
+                        <span class=""><span class="fa fa-clock-o"></span>Lundi - Vendredi : 8:30 à 19:30 GMT</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- //top header -->
+
+<!-- //header -->
+<header class="py-3">
+    <div class="container">
+            <div id="logo">
+                <h1> <a href="{{ path('default') }}"><span class="fa fa-stethoscope" aria-hidden="true"></span>Symfony Dentiste</a></h1>
+            </div>
+        <!-- nav -->
+        <nav class="d-lg-flex">
+
+            <label for="drop" class="toggle"><span class="fa fa-bars"></span></label>
+            <input type="checkbox" id="drop" />
+            <ul class="menu mt-2 ml-auto">
+                <li class="active"><a href="{{ path('about') }}">À propos</a></li>
+                <li class=""><a href="{{ path('services') }}">Services</a></li>
+                <li class=""><a href="{{ path('gallry') }}">Galerie</a></li>
+                <li class=""><a href="{{ path('blog') }}">Blog</a></li>
+                <li class=""><a href="{{ path('contact') }}">Contacter nous</a></li>
+            </ul>
+            <div class="login-icon ml-2">
+                <a class="" href="{{ path('admin')}}"> Espace Admin </a>
+            </div>
+        </nav>
+        <div class="clear"></div>
+        <!-- //nav -->
+    </div>
+</header>
+<!-- //header -->
+
+<!-- banner -->
+<div class="banner" id="home">
+    <div class="layer">
+        <div class="container">
+            <div class="banner-text-agile">
+                <div class="row">
+                    <div class="col-lg-6 p-0">
+                        <!-- banner slider-->
+                    <div class="csslider infinity" id="slider1">
+                        <input type="radio" name="slides" checked="checked" id="slides_1" />
+                        <input type="radio" name="slides" id="slides_2" />
+                        <ul class="banner_slide_bg">
+                            <li>
+                                <div class="container-fluid">
+                                    <div class="w3ls_banner_txt">
+                                        <h3 class="b-w3ltxt text-capitalize mt-md-4"><span>Orthodontie de qualité </span> Traitements.</h3>
+                                        <p class="w3ls_pvt-title my-3">Notre cabinet vise à l’excellence par la mise en œuvre d’une démarche qualité qui place le patient au centre de ses préoccupations.La preuve est scientifique, l’orthodontie améliore la qualité de la vie ! Rappelons que l’orthodontie vise à corriger les malpositions des dents et des mâchoires, afin de garantir une bonne santé dentaire et une bonne mastication, tout en assurant un résultat esthétique satisfaisant.</p>
+                                        <a href="{{ path('about') }}" class="btn btn-banner my-sm-3 mb-3">Read More</a>
+                                        <a href="{{ path('contact') }}" class="btn btn-banner1 my-sm-3 mb-3">Consult a dentist</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="container-fluid">
+                                    <div class="w3ls_banner_txt">
+                                        <h3 class="b-w3ltxt text-capitalize mt-md-4"><span>Nous nous soucions de vos</span> Dents</h3>
+                                        <p class="w3ls_pvt-title my-3">L’éthique, l’honnêteté, la convivialité, le respect de l’environnement, la volonté de conserver l’intégrité des dents et d’éviter toute extraction qui ne serait pas nécessaire, la proposition de traitements performants en tenant compte du coût et, le respect de l’environnement. Nous préférons des traitements personnalisés, conçus dans notre cabinet à des processus sous traités et fabriqués à l’autre bout du monde, de coût élevé et ne permettant que la correction de faibles anomalies.</p>
+                                        <a href="{{ path('about') }}" class="btn btn-banner my-sm-3 mb-3">Read More</a>
+                                        <a href="{{ path('contact') }}" class="btn btn-banner1 my-sm-3 mb-3">Consult a dentist</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="navigation">
+                            <div>
+                                <label for="slides_1"></label>
+                                <label for="slides_2"></label>
+                                <label for="slides_3"></label>
+                            </div>
+                        </div>
+                    </div>
+
+                    </div>
+                    <div class="col-lg-6 col-md-8">
+                        <img src="images/banner.png" alt="" class="img-fluid" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- //banner -->
+
+<!-- services -->
+<section class="services py-5">
+    <div class="container py-lg-5">
+        <h3 class="heading text-center mb-sm-5 mb-4">Ce que nous faisons :</h3>
+        <div class="row offer-grids">
+            <div class="col-lg-4 col-md-6">
+                <div class="ser1">
+                    <div class="bg-layer">
+                        <h2 class="">Dentisterie esthétique</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mt-md-0 mt-4">
+                <div class="ser2">
+                    <div class="bg-layer">
+                        <h2 class="">Remplacement de dents manquantes</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mt-lg-0 mt-4">
+                <div class="ser3">
+                    <div class="bg-layer">
+                        <h2 class="">Soins généraux et prévention</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mt-4">
+                <div class="ser4">
+                    <div class="bg-layer">
+                        <h2 class="">Urgences dentaires </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- //services --> 
+
+<!-- testimonials -->
+<section class="feedback" id="testimonials">
+    <div class="feedback-layer py-5">
+        <div class="container py-lg-5">
+        <h3 class="heading text-center mb-sm-5 mb-4">Témoignages</h3>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="feedback-info">
+                        <div class="feedback-top p-4">
+                            <span class="fa fa-quote-right"></span> 
+                            <p>Personnel compétent et chaleureux qui à cœur notre santé. Je suis très satisfait d’une importante restauration effectuée par la clinique dernièrement.
+
+                            Notre famille ‘les 3 générations’ apprécie les services rendus, l’emphase sur la prévention, la qualité et le professionnalisme de tout son personnel</p>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="feedback-grids">
+                            <div class="feedback-img">
+                                <img src="images/ser1.jpg" class="img-fluid" alt="">
+                            </div>
+                            <div class="feedback-img-info">
+                                <h5>Aaraba Anass</h5>
+                                <p class="font-italic">- le 3 juin, 2021.</p>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mt-md-0 mt-5">
+                    <div class="feedback-info">
+                        <div class="feedback-top p-4">
+                            <span class="fa fa-quote-right"></span> 
+                            <p> Je suis patiente au centre dentaire Symfony depuis quelques années. Lorsque je suis arrivée la première fois pour mon rendez-vous annuel, ce qui m’a frappé le plus était la considération que les employés avaient envers moi. L’hygiéniste dentaire a pris le temps de de me demander comment j’allais, mon état de santé générale, ce que j’avais de fait depuis la dernière fois que nous nous étions vues, avais-je passé de belles vacances? C’est ce que j’appelle se sentir un client important! Quel beau sentiment d’être reconnu. Wow!</p>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="feedback-grids">
+                            <div class="feedback-img">
+                                <img src="images/ser2.webp" class="img-fluid" alt="">
+                            </div>
+                            <div class="feedback-img-info">
+                                <h5>Symfony person</h5>
+                                <p class="font-italic">- 17 juillet, 2021.</p>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mt-lg-0 mt-5">
+                    <div class="feedback-info">
+                        <div class="feedback-top p-4">
+                            <span class="fa fa-quote-right"></span> 
+                            <p> Ma famille est très satisfaite du service de toute l'équipe du cabinet dentaire qui est très cordial et professionnel. Nous avons rencontré 3 dentistes et sommes très satisfait du service reçu de chacun.
+
+                            Les traitements sont très bien expliqués et nous sommes très bien conseillés à planifier les traitements dans le but d’obtenir le maximum vis-à-vis nos plans d’assurance.
+
+                            Gros merci à tous et toi Anas pour ton temps consacré à planifier mes traitements</p>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="feedback-grids">
+                            <div class="feedback-img">
+                                <img src="images/ser3.jpg" class="img-fluid" alt="">
+                            </div>
+                            <div class="feedback-img-info">
+                                <h5>Amine Aaz El Aarab</h5>
+                                <p class="font-italic">- 20 juillet, 2021.</p>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- //testimonials -->
+
+<!-- blog -->
+<section class="blog py-5">
+    <div class="container py-md-5 py-3">
+        <h3 class="heading text-center mb-sm-5 mb-4">Dernières nouvelles </h3>
+        <div class="row blog-grids">
+            <div class="col-lg-7 mb-lg-5 blog-img1">
+                <img src="images/bl.jpg" alt="" class="img-fluid"/>
+            </div>
+            <div class="col-lg-5 mb-lg-5 mb-4">
+                <h5>06 Aug 2021.</h5>
+                <h4 class="my-3">Pourquoi une bonne santé bucco-dentaire aide à prévenir les maladies cardiovasculaires ?</h4>
+                <a href="{{ path('single1') }}" class="btn-banner"> Voir l'article </a>
+            </div>
+            <div class="col-lg-5 mb-lg-0 mb-4">
+                <h5>March 3, 2021.</h5>
+                <h4 class="my-3">Troubles temporo-mandibulaires: types et symptômes </h4>
+                <a href="#" class="btn-banner"> Voir l'article </a>
+            </div>
+            <div class="col-lg-7 blog-img2">
+                <img src="images/al.jpg" alt="" class="img-fluid"/>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- //blog -->
+
+<!-- appointment -->
+<section class="appointment text-center py-5">
+    <div class="container py-sm-3">
+        <h4>FAITES DE VOTRE SOURIRE DE RÊVE UNE RÉALITÉ</h4>
+        <p class="mt-3">Appelez-nous pour réserver votre rendez-vous aujourd'hui
+</p>
+        <a href="{{ path('contact') }}">Prenez rendez-vous</a>
+    </div>
+</section>
+<!-- //appointment -->
+
+<!-- footer -->
+<footer class="py-5">
+    <div class="container py-sm-3">
+        <div class="row footer-grids">
+            <div class="col-lg-3 col-sm-6 mb-lg-0 mb-sm-5 mb-4">
+                <h4 class="mb-sm-4 mb-3"><span class="fa fa-stethoscope"></span> Santé dentaire</h4>
+                <h5>Approuvé par<span>500+ Personnes</span> </h5>
+            </div>
+            <div class="col-lg-3 col-sm-6 mb-lg-0 mb-sm-5 mb-4">
+                <h4 class="mb-sm-4 mb-3">Address Info</h4>
+                <p><span class="fa mr-2 fa-map-marker"></span>: B.P. 6217, Madinat Al Irfane, Rabat-Institut<span>Rabat, Maroc</span></p>
+                <p class="phone py-2"><span class="fa mr-2 fa-phone"></span>0526010101</p>
+                <p><span class="fa mr-2 fa-envelope"></span><a href="mailto:info@example.com"> Dse@Symfony.com</a></p>
+            </div>
+            <div class="col-lg-2 col-sm-6 mb-sm-0 mb-4">
+                <h4 class="mb-sm-4 mb-3">Liens rapides</h4>
+                <ul>
+                    <li><a href="#">Termes & Conditions</a></li>
+                    <li class="my-2"><a href="#">Support Helpline</a></li>
+                    <li><a href="#">Conseils santé</a></li>
+                    <li class="mt-2"><a href="#">Politique de confidentialité</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <h4 class="mb-sm-4 mb-3">Subscribe Us</h4>
+                <p class="mb-3">Subscribe to our newsletter</p>
+                <form action="#" method="post" class="d-flex">
+                    <input type="email" id="email" name="EMAIL" placeholder="Enter your email here" required="">
+                    <button type="submit" class="btn">Subscribe</button>
+                </form>
+                <div class="icon-social mt-3">
+                    <a href="#" class="button-footr">
+                        <span class="fa mx-2 fa-facebook"></span>
+                    </a>
+                    <a href="#" class="button-footr">
+                        <span class="fa mx-2 fa-twitter"></span>
+                    </a>
+                    <a href="#" class="button-footr">
+                        <span class="fa mx-2 fa-dribbble"></span>
+                    </a>
+                    <a href="#" class="button-footr">
+                        <span class="fa mx-2 fa-pinterest"></span>
+                    </a>
+                    <a href="#" class="button-footr">
+                        <span class="fa mx-2 fa-google-plus"></span>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- //footer -->
+
+<!-- copyright -->
+<div class="copyright">
+    <div class="container py-4">
+        <div class=" text-center">
+            <p>© 2021 Dental Health. All Rights Reserved</p>
+        </div>
+    </div>
+</div>
+<!-- //copyright -->
+        
+<!-- move top -->
+<div class="move-top text-right">
+    <a href="#home" class="move-top"> 
+        <span class="fa fa-angle-up  mb-3" aria-hidden="true"></span>
+    </a>
+</div>
+<!-- move top -->
+{% endblock %}

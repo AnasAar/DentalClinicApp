@@ -1,0 +1,266 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} Nos Services {% endblock %}
+{% block header %}
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Dental Health Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+
+    <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+
+{% endblock %}
+{% block body %}
+
+<!-- top header -->
+<div class="header-top">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6">
+				<ul class="d-lg-flex header-w3_pvt">
+					<li class="mr-lg-3">
+						<span class="fa fa-envelope-open"></span>
+						<a href="mailto:Dse@symfony.com" class="">Dse@symfony.com</a>
+					</li>
+					<li>
+						<span class="fa fa-phone"></span>
+						<p class="d-inline">Appelez-nous 0526010101</p>
+					</li>
+				</ul>
+			</div>
+			<div class="col-sm-6 header-right-w3_pvt">
+				<ul class="d-lg-flex header-w3_pvt justify-content-lg-end">
+					<li class="mr-lg-3">
+						<span class=""><span class="fa fa-clock-o"></span>Lundi - Vendredi : 8:30 à 19:30 GMT</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- //top header -->
+
+<header class="py-3">
+    <div class="container">
+            <div id="logo">
+                <h1> <a href="{{ path('default') }}"><span class="fa fa-stethoscope" aria-hidden="true"></span>Symfony Dentiste</a></h1>
+            </div>
+        <!-- nav -->
+        <nav class="d-lg-flex">
+
+            <label for="drop" class="toggle"><span class="fa fa-bars"></span></label>
+            <input type="checkbox" id="drop" />
+            <ul class="menu mt-2 ml-auto">
+                <li class="active"><a href="{{ path('about') }}">À propos</a></li>
+                <li class=""><a href="{{ path('services') }}">Services</a></li>
+                <li class=""><a href="{{ path('gallry') }}">Galerie</a></li>
+                <li class=""><a href="{{ path('blog') }}">Blog</a></li>
+                <li class=""><a href="{{ path('contact') }}">Contacter nous</a></li>
+            </ul>
+            <div class="login-icon ml-2">
+                <a class="" href="{{ path('admin') }}"> Espace Admin </a>
+            </div>
+        </nav>
+        <div class="clear"></div>
+        <!-- //nav -->
+    </div>
+</header>
+
+<!-- banner -->
+<div class="innerpage-banner" id="home">
+	<div class="inner-page-layer">
+	</div>
+</div>
+<!-- //banner -->
+
+<!-- Services -->
+<section class="services-inner py-5">
+	<div class="container py-md-3">
+		<h2 class="heading text-center mb-sm-5 mb-4">Services </h2>
+		<div class="row service-grids">
+			<div class="row col-lg-6 mb-5 padder-none">
+				<div class="col-sm-3 ser_icon">
+					<span class="icon bg1 mx-auto">
+						<span class="fa fa-heartbeat"></span>
+					</span>
+				</div>
+				<div class="col-sm-9 mt-sm-0 mt-3">
+					<h4>Traitement de canal</h4>
+					<p class="">La dent est constituée de deux parties, la dentine est la partie interne et l’émail (partie dure) est la partie externe.
+					Au centre de la dent se trouvent les vaisseaux sanguins et le nerf. Ils se situent dans un tout petit canal qui est la partie vivante de la dent. Lorsque le nerf est mort ou trop malade, la douleur devient insupportable, car la dent développe un abcès.</p>
+				</div>
+			</div>
+			<div class="row col-lg-6 mb-sm-5 padder-none">
+				<div class="col-sm-9 text-sm-right">
+					<h4> Extraction des dents de sagesse</h4>
+					<p class="">Les dents de sagesse sont un vestige de nos ancêtres les grands singes.
+					Il est à noter que plus l’évolution progresse, plus nous constatons souvent l’absence des dents de sagesse chez certains jeunes patients chanceux. Tout le problème se résume à ceci : les dents de sagesse n’ont pas suffisamment d’espace pour pousser correctement. Plusieurs problèmes peuvent découler de ce manque d’espace.</p>
+				</div>
+				<div class="col-sm-3 mt-sm-0 mt-4 ser_icon ser-right">
+					<span class="icon bg2 mx-auto">
+						<span class="fa fa-stethoscope"></span>
+					</span>
+				</div>
+			</div>
+			<div class="row col-lg-6 mb-lg-0 mb-5 mt-sm-0 mt-5 padder-none">
+				<div class="col-sm-3 mb-sm-0 mb-4 ser_icon">
+					<span class="icon bg3 mx-auto">
+						<span class="fa fa-bullseye"></span>
+					</span>
+				</div>
+				<div class="col-sm-9">
+					<h4>Soins généraux et prévention</h4>
+					<p class="">Soins dentaires et prévention</p>
+					<p class="">Carie Dentaire</p>
+					<p class="">Bruxisme, causes, symptomes et traitements</p>
+					<p class="">Traitement des feux sauvages au laser</p>
+				</div>
+			</div>
+			<div class="row col-lg-6 padder-none">
+				<div class="col-sm-9 text-sm-right">
+					<h4>DENTISTERIE ESTHÉTIQUE</h4>
+					<p class="">Dentisterie Esthétique</p>
+					<p class="">Implants et remplacements de dents manquantes</p>
+					<p class="">Cas traités</p>
+				</div>
+				<div class="col-sm-3 mt-sm-0 mt-4 ser_icon ser-right">
+					<span class="icon bg4 mx-auto">
+						<span class="fa fa-user-md"></span>
+					</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- //Services -->
+
+
+<!-- services -->
+<section class="services py-5">
+	<div class="container py-lg-5">
+		<h3 class="heading text-center mb-sm-5 mb-4">Ce que nous faisons :</h3>
+		<div class="row offer-grids">
+			<div class="col-lg-4 col-md-6">
+				<div class="ser1">
+					<div class="bg-layer">
+						<h2 class="">Dentisterie esthétique</h2>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6 mt-md-0 mt-4">
+				<div class="ser2">
+					<div class="bg-layer">
+						<h2 class="">Remplacement de dents manquantes</h2>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6 mt-lg-0 mt-4">
+				<div class="ser3">
+					<div class="bg-layer">
+						<h2 class="">Soins généraux et prévention</h2>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6 mt-4">
+				<div class="ser4">
+					<div class="bg-layer">
+						<h2 class="">Urgences dentaires </h2>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- //services -->	
+
+<!-- footer -->
+<section class="appointment text-center py-5">
+	<div class="container py-sm-3">
+		<h4>FAITES DE VOTRE SOURIRE DE RÊVE UNE RÉALITÉ</h4>
+		<p class="mt-3">Appelez-nous pour réserver votre rendez-vous aujourd'hui
+</p>
+		<a href="{{ path('contact') }}">Prenez rendez-vous</a>
+	</div>
+</section>
+<!-- //appointment -->
+
+<!-- footer -->
+<footer class="py-5">
+	<div class="container py-sm-3">
+		<div class="row footer-grids">
+			<div class="col-lg-3 col-sm-6 mb-lg-0 mb-sm-5 mb-4">
+				<h4 class="mb-sm-4 mb-3"><span class="fa fa-stethoscope"></span> Santé dentaire</h4>
+				<h5>Approuvé par<span>500+ Personnes</span> </h5>
+			</div>
+			<div class="col-lg-3 col-sm-6 mb-lg-0 mb-sm-5 mb-4">
+				<h4 class="mb-sm-4 mb-3">Address Info</h4>
+				<p><span class="fa mr-2 fa-map-marker"></span>: B.P. 6217, Madinat Al Irfane, Rabat-Institut<span>Rabat, Maroc</span></p>
+				<p class="phone py-2"><span class="fa mr-2 fa-phone"></span>0526010101</p>
+				<p><span class="fa mr-2 fa-envelope"></span><a href="mailto:info@example.com"> Dse@Symfony.com</a></p>
+			</div>
+			<div class="col-lg-2 col-sm-6 mb-sm-0 mb-4">
+				<h4 class="mb-sm-4 mb-3">Liens rapides</h4>
+				<ul>
+					<li><a href="#">Termes & Conditions</a></li>
+					<li class="my-2"><a href="#">Support Helpline</a></li>
+					<li><a href="#">Conseils santé</a></li>
+					<li class="mt-2"><a href="#">Politique de confidentialité</a></li>
+				</ul>
+			</div>
+			<div class="col-lg-4 col-sm-6">
+				<h4 class="mb-sm-4 mb-3">Subscribe Us</h4>
+				<p class="mb-3">Subscribe to our newsletter</p>
+				<form action="#" method="post" class="d-flex">
+					<input type="email" id="email" name="EMAIL" placeholder="Enter your email here" required="">
+					<button type="submit" class="btn">Subscribe</button>
+				</form>
+				<div class="icon-social mt-3">
+					<a href="#" class="button-footr">
+						<span class="fa mx-2 fa-facebook"></span>
+					</a>
+					<a href="#" class="button-footr">
+						<span class="fa mx-2 fa-twitter"></span>
+					</a>
+					<a href="#" class="button-footr">
+						<span class="fa mx-2 fa-dribbble"></span>
+					</a>
+					<a href="#" class="button-footr">
+						<span class="fa mx-2 fa-pinterest"></span>
+					</a>
+					<a href="#" class="button-footr">
+						<span class="fa mx-2 fa-google-plus"></span>
+					</a>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+<!-- //footer -->
+
+<!-- copyright -->
+<div class="copyright">
+	<div class="container py-4">
+		<div class=" text-center">
+			<p>© 2021 Dental Health. All Rights Reserved</p>
+		</div>
+	</div>
+</div>
+<!-- //copyright -->
+		
+<!-- move top -->
+<div class="move-top text-right">
+	<a href="#home" class="move-top"> 
+		<span class="fa fa-angle-up  mb-3" aria-hidden="true"></span>
+	</a>
+</div>
+<!-- move top -->
+{% endblock %}

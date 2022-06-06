@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Facture{% endblock %}
+
+{% block body %}
+<h1><span class="fa fa-stethoscope" aria-hidden="true"></span>Create new Facture</h1>
+
+    {{ include('facture/_form.html.twig') }}
+<div class="login-icon ml-2">
+    <a class="" href="{{ path('facture_index') }}"> back to list </a>
+</div>
+{% endblock %}

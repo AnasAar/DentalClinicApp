@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Fiche Traitement{% endblock %}
+
+{% block body %}
+<h1><span class="fa fa-stethoscope" aria-hidden="true"></span>Create new Fiche Traitement</h1>
+
+
+    {{ include('fiche_traitement/_form.html.twig') }}
+
+<div class="login-icon ml-2">
+    <a class="" href="{{ path('fiche_traitement_index') }}"> back to list </a>
+</div>
+{% endblock %}

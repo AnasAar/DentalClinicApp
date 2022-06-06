@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit Ordonance{% endblock %}
+
+{% block body %}
+<h1><span class="fa fa-stethoscope" aria-hidden="true"></span>Edit Ordonance</h1>
+
+    {{ include('ordonance/_form.html.twig', {'button_label': 'Update'}) }}
+
+<div class="login-icon ml-2">
+    <a class="" href="{{ path('ordonance_index') }}"> back to list </a>
+</div>
+
+    {{ include('ordonance/_delete_form.html.twig') }}
+{% endblock %}

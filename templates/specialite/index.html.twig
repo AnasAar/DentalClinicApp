@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Specialite index{% endblock %}
+
+{% block body %}
+<h1><span class="fa fa-stethoscope" aria-hidden="true"></span>Specialite index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nom_specialite</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for specialite in specialites %}
+            <tr>
+                <td>{{ specialite.id }}</td>
+                <td>{{ specialite.nomSpecialite }}</td>
+                <td><div class="login-icon ml-2">
+                    <a class="" href="{{ path('specialite_show', {'id': specialite.id}) }}"> show </a>
+                    <a class="" href="{{ path('specialite_edit', {'id': specialite.id}) }}"> edit </a>
+                    </div>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="3">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+<div class="login-icon ml-2">
+<a class="" href="{{ path('specialite_new') }}"> Create new </a>
+</div>
+
+<div class="login-icon ml-2">
+<a class="" href="{{ path('admin') }}"> Page admin </a>
+</div>
+{% endblock %}

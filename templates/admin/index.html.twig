@@ -1,0 +1,153 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Espace Admin{% endblock %}
+{% block header %}
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Dental Health Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+
+    <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+
+{% endblock %}
+{% block body %}
+<header class="py-3">
+    <div class="container">
+            <div id="logo">
+                <h1><span class="fa fa-stethoscope" aria-hidden="true"></span>Symfony Dentiste Admin</h1>
+            </div>
+        <!-- nav -->
+        <nav class="d-lg-flex">
+
+            <label for="drop" class="toggle"><span class="fa fa-bars"></span></label>
+            <input type="checkbox" id="drop" />
+            <div class="login-icon ml-2">
+                <a class="" href="{{ path('default')}}"> Page officielle </a>
+            </div>
+        </nav>
+        <div class="clear"></div>
+        <!-- //nav -->
+    </div>
+</header>
+
+
+<section class="services py-5">
+    <div class="container py-lg-5">
+        <h3 class="heading text-center mb-sm-5 mb-4">Édition d'espace client :</h3>
+        <div class="row offer-grids">
+            <div class="col-lg-4 col-md-6">
+                <div class="ser1">
+                    <div class="bg-layer">
+                        <h2 class="">Consultations</h2><br>
+                    </div>
+                    <a href="{{ path('consultation_index') }}" class="btn-banner"> Data </a> </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mt-md-0 mt-4">
+                <div class="ser2">
+                    <div class="bg-layer">
+                        <h2 class="">Dossiers Médicale</h2><br>
+                    </div>
+                    <a href="{{ path('dossier_medical_index') }}" class="btn-banner"> Data </a> </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mt-lg-0 mt-4">
+                <div class="ser3">
+                    <div class="bg-layer">
+                        <h2 class="">Factures</h2><br>
+                    </div>
+                    <a href="{{ path('facture_index') }}" class="btn-banner"> Data </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mt-4">
+                <div class="ser4">
+                    <div class="bg-layer">
+                        <h2 class="">Fiche de Traitements </h2><br>
+                    </div>
+                    <a href="{{ path('fiche_traitement_index') }}" class="btn-banner"> Data </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mt-4">
+                <div class="ser4">
+                    <div class="bg-layer">
+                        <h2 class="">Lignes de Traitements </h2><br>
+                    </div>
+                    <a href="{{ path('lignetraitement_index') }}" class="btn-banner"> Data </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mt-4">
+                <div class="ser4">
+                    <div class="bg-layer">
+                        <h2 class="">Medcins </h2><br>
+                    </div>
+                    <a href="{{ path('medcin_index') }}" class="btn-banner"> Data </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mt-4">
+                <div class="ser4">
+                    <div class="bg-layer">
+                        <h2 class="">Medicaments </h2><br>
+                    </div>
+                    <a href="{{ path('medicament_index') }}" class="btn-banner"> Data </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mt-4">
+                <div class="ser4">
+                    <div class="bg-layer">
+                        <h2 class="">Ordonances </h2><br>
+                    </div>
+                    <a href="{{ path('ordonance_index') }}" class="btn-banner"> Data </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mt-4">
+                <div class="ser4">
+                    <div class="bg-layer">
+                        <h2 class="">Paiments </h2><br>
+                    </div>
+                    <a href="{{ path('paiement_index') }}" class="btn-banner"> Data </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mt-4">
+                <div class="ser4">
+                    <div class="bg-layer">
+                        <h2 class="">Patients </h2><br>
+                    </div>
+                    <a href="{{ path('patient_index') }}" class="btn-banner"> Data </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mt-4">
+                <div class="ser4">
+                    <div class="bg-layer">
+                        <h2 class="">Prescriptions </h2><br>
+                    </div>
+                    <a href="{{ path('prescription_index') }}" class="btn-banner"> Data </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mt-4">
+                <div class="ser4">
+                    <div class="bg-layer">
+                        <h2 class="">Rendez-vous </h2><br>
+                    </div>
+                    <a href="{{ path('rdv_index') }}" class="btn-banner"> Data </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mt-4">
+                <div class="ser4">
+                    <div class="bg-layer">
+                        <h2 class="">Specialite </h2><br>
+                    </div>
+                    <a href="{{ path('specialite_index') }}" class="btn-banner"> Data </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

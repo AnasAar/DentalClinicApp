@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Prescription{% endblock %}
+
+{% block body %}
+<h1><span class="fa fa-stethoscope" aria-hidden="true"></span>Prescription</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ prescription.id }}</td>
+            </tr>
+            <tr>
+                <th>Nbr_fois</th>
+                <td>{{ prescription.nbrFois }}</td>
+            </tr>
+            <tr>
+                <th>Quand_medi</th>
+                <td>{{ prescription.quandMedi }}</td>
+            </tr>
+            <tr>
+                <th>Forme_medi</th>
+                <td>{{ prescription.formeMedi }}</td>
+            </tr>
+            <tr>
+                <th>Medicament</th>
+                <td>{{ prescription.medcicament }}</td>
+            </tr>
+            <td>
+                <div class="login-icon ml-2">
+                    <a class="" href="{{ path('prescription_index') }}"> back to list </a>
+
+                    <a class="" href="{{ path('prescription_edit', {'id': prescription.id}) }}"> edit </a>
+                </div>
+            </td>
+        </tbody>
+    </table>
+
+    {{ include('prescription/_delete_form.html.twig') }}
+{% endblock %}

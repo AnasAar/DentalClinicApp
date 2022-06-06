@@ -1,0 +1,29 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Specialite{% endblock %}
+
+{% block body %}
+<h1><span class="fa fa-stethoscope" aria-hidden="true"></span>Specialite</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ specialite.id }}</td>
+            </tr>
+            <tr>
+                <th>Nom_specialite</th>
+                <td>{{ specialite.nomSpecialite }}</td>
+            </tr>
+            <td>
+                <div class="login-icon ml-2">
+                    <a class="" href="{{ path('specialite_index') }}"> back to list </a>
+
+                    <a class="" href="{{ path('specialite_edit', {'id': specialite.id}) }}"> edit </a>
+                </div>
+            </td>
+        </tbody>
+    </table>
+
+    {{ include('specialite/_delete_form.html.twig') }}
+{% endblock %}

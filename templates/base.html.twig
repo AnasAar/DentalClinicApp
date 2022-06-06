@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        {% block stylesheets %}
+        <link rel="stylesheet" type="text/css" href="{{ asset('../public/css/css_slider.css') }}" /> 
+        <link rel="stylesheet" type="text/css" href="{{ asset('../public/css/bootstrap.css') }}" /> 
+        <link rel="stylesheet" type="text/css" href="{{ asset('../public/css/style.css') }}" /> 
+        <link rel="stylesheet" type="text/css" href="{{ asset('../public/css/font-awesome.min.css') }}" /> 
+        {% endblock %}
+        <link rel="shortcut icon" type="image/x-icon" href="{{asset('../public/images/abb.ico')}}">
+    </head>
+    <body>
+        {% block body %}{% endblock %}
+        {% block javascripts %}
+        {% endblock %}
+    </body>
+</html>

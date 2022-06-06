@@ -1,0 +1,53 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Patient{% endblock %}
+
+{% block body %}
+<h1><span class="fa fa-stethoscope" aria-hidden="true"></span>Patient</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ patient.id }}</td>
+            </tr>
+            <tr>
+                <th>Nom_pat</th>
+                <td>{{ patient.nomPat }}</td>
+            </tr>
+            <tr>
+                <th>Prenom_pat</th>
+                <td>{{ patient.prenomPat }}</td>
+            </tr>
+            <tr>
+                <th>Email_pat</th>
+                <td>{{ patient.emailPat }}</td>
+            </tr>
+            <tr>
+                <th>Sexe_pat</th>
+                <td>{{ patient.sexePat }}</td>
+            </tr>
+            <tr>
+                <th>Adresse_pat</th>
+                <td>{{ patient.adressePat }}</td>
+            </tr>
+            <tr>
+                <th>Cin_pat</th>
+                <td>{{ patient.cinPat }}</td>
+            </tr>
+            <tr>
+                <th>Tel_pat</th>
+                <td>{{ patient.telPat }}</td>
+            </tr>
+            <td>
+                <div class="login-icon ml-2">
+                    <a class="" href="{{ path('patient_index') }}"> back to list </a>
+
+                    <a class="" href="{{ path('patient_edit', {'id': patient.id}) }}"> edit </a>
+                </div>
+            </td>
+        </tbody>
+    </table>
+    {{ include('patient/_delete_form.html.twig') }}
+
+{% endblock %}

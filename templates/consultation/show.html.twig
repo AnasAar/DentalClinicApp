@@ -1,0 +1,37 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Consultation{% endblock %}
+
+{% block body %}
+<h1><span class="fa fa-stethoscope" aria-hidden="true"></span>Consultation</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ consultation.id }}</td>
+            </tr>
+            <tr>
+                <th>Date_cons</th>
+                <td>{{ consultation.dateCons ? consultation.dateCons|date('Y-m-d H:i:s') : '' }}</td>
+            </tr>
+            <tr>
+                <th>Type_cons</th>
+                <td>{{ consultation.typeCons }}</td>
+            </tr>
+            <tr>
+                <th>Patient</th>
+                <td>{{ consultation.patient }}</td>
+            </tr>
+            <td>
+                <div class="login-icon ml-2">
+                    <a class="" href="{{ path('consultation_index') }}"> back to list </a>
+
+                    <a class="" href="{{ path('consultation_edit', {'id': consultation.id}) }}"> edit </a>
+                </div>
+            </td>
+        </tbody>
+    </table>
+
+    {{ include('consultation/_delete_form.html.twig') }}
+{% endblock %}

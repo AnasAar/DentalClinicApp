@@ -1,0 +1,54 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Patient index{% endblock %}
+
+{% block body %}
+<h1><span class="fa fa-stethoscope" aria-hidden="true"></span>Patient index</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nom_pat</th>
+            <th>Prenom_pat</th>
+            <th>Email_pat</th>
+            <th>Sexe_pat</th>
+            <th>Adresse_pat</th>
+            <th>Cin_pat</th>
+            <th>Tel_pat</th>
+            <th>actions</th>
+        </tr>
+    </thead>
+    <tbody>
+    {% for patient in patients %}
+            <tr>
+            <td>{{ patient.id }}</td>
+            <td>{{ patient.nomPat }}</td>
+            <td>{{ patient.prenomPat }}</td>
+            <td>{{ patient.emailPat }}</td>
+            <td>{{ patient.sexePat }}</td>
+            <td>{{ patient.adressePat }}</td>
+            <td>{{ patient.cinPat }}</td>
+            <td>{{ patient.telPat }}</td>
+            <td>
+                <div class="login-icon ml-2">
+                <a class="" href="{{ path('patient_show', {'id': patient.id}) }}"> show </a>
+                <a class="" href="{{ path('patient_edit', {'id': patient.id}) }}"> edit </a>
+                </div>
+            </td>
+        </tr>
+    {% else %}
+        <tr>
+            <td colspan="9">no records found</td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+
+<div class="login-icon ml-2">
+<a class="" href="{{ path('patient_new') }}"> Create new </a>
+</div>
+<div class="login-icon ml-2">
+<a class="" href="{{ path('admin') }}"> Page Admin </a>
+</div>
+{% endblock %}
